@@ -1,16 +1,39 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4 header-container">
+        <div class="header-container type p-0">
             <h2>FURNITURE</h2>
         </div>
-        <nav class="header header-container navbar navbar-expand-lg col-sm-8">
-            <ul class="nav navbar">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="parent-header">
+            <nav class="header header-container navbar navbar-expand-lg fixed-top">
+                <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" fdprocessedid="510o7n">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Furniture</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-right: 30vw;">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+            </nav>
+        </div>
     </div>
 </div>
