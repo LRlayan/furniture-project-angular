@@ -1,18 +1,10 @@
-.header{
-    right: 54px;
-}
-
-.header-container>ul>li{
-    margin-left: 48px;
-}
-
 .header-container ul li a{
     -webkit-text-fill-color: #ffffff;
+    margin-left: 32px;
 }
 
 .header-container{
     position: absolute;
-    top: 20px;
 }
 
 .header-container>h2{
@@ -20,4 +12,21 @@
     font-family:fantasy;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.toggle-btn{
+    display: none;
+}
+
+.type{
+    width: 50vw;
+}
+
+@media all and (max-width:991px) {
+    .toggle-btn{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
 }
