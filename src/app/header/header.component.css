@@ -1,0 +1,23 @@
+.header{
+    right: 54px;
+}
+
+.header-container>ul>li{
+    margin-left: 48px;
+}
+
+.header-container ul li a{
+    -webkit-text-fill-color: #ffffff;
+}
+
+.header-container{
+    position: absolute;
+    top: 20px;
+}
+
+.header-container>h2{
+    -webkit-text-fill-color: #ffffff;
+    font-family:fantasy;
+    margin-top: 10px;
+    margin-left: 10px;
+}
