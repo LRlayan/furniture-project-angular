@@ -22,6 +22,10 @@
     width: 50vw;
 }
 
+.fixed{
+    position: fixed;
+}
+
 @media all and (max-width:991px) {
     .toggle-btn{
         display: block;
