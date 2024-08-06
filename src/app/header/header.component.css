@@ -26,6 +26,13 @@
     position: fixed;
 }
 
+/* .header-line{
+    width: 40%;
+    margin-left: 420px;
+    margin-top: 55px;
+    color: cornflowerblue;
+} */
+
 @media all and (max-width:991px) {
     .toggle-btn{
         display: block;
