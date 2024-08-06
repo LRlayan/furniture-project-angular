@@ -1,0 +1,10 @@
+.text-center h4{
+    padding: 20px;
+    font-weight: normal;
+}
+
+.line{
+    width: 45%;
+    color: gray;
+    margin-left: 27vw;
+}
