@@ -7,4 +7,42 @@
     width: 45%;
     color: gray;
     margin-left: 27vw;
+    margin-bottom: 42px;
+}
+
+.aspect{
+    width: 80.2%;
+    aspect-ratio: 10/9;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+}
+  
+button {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+button:hover {
+    background-color: #ddd;
+}
+  
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.image-item {
+    width: 100%;
 }
