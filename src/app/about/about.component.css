@@ -25,6 +25,10 @@
     padding-top: 7rem;  
 }
 
+.img-fit{
+    object-fit: cover;
+}
+
 @media all and (max-width:768px) {
     .no-display{
         display: none;
