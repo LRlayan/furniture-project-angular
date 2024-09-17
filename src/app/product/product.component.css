@@ -21,16 +21,8 @@
     position: relative;
 }
   
-button {
-    background-color: #f8f9fa;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-}
-  
 button:hover {
-    background-color: #ddd;
+    background-color: #7C93C3;
 }
   
 .image-grid {
@@ -45,4 +37,15 @@ button:hover {
 
 .image-item {
     width: 100%;
+}
+
+.btn{
+  background-color: #1E2A5E;
+  color: #ffffff;
+  width: 12%;
+  margin: 33px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
 }
