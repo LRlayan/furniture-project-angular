@@ -38,8 +38,8 @@
             <img class="rounded aspect" [src]="image.src" [alt]="image.alt">
           </div>
         </div>
-        <button (click)="prevSlide()">&#10094; Previous</button>
-        <button (click)="nextSlide()">Next &#10095;</button>
+        <button class="btn" (click)="prevSlide()">&#10094;&nbsp;{{prevBtn}}</button>
+        <button class="btn" (click)="nextSlide()">{{nextBtn}}&nbsp;&#10095;</button>
       </div>  
     </div>
     <app-section-end></app-section-end>
