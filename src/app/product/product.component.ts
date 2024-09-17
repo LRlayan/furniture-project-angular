@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { SectionEndComponent } from "../section-end/section-end.component";
 import { CommonModule } from '@angular/common'; // Import CommonModule
 
@@ -10,6 +10,9 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
+  nextBtn: string = 'Next';
+  prevBtn: string = 'Previous';
+
   images = [
     { src: '/closet1.jpg', alt: 'closet', category: 'Closets' },
     { src: '/closet2.jpg', alt: 'closet', category: 'Closets' },
@@ -97,5 +100,26 @@ export class ProductComponent {
   selectCategory(category: string) {
     this.selectedCategory = category;
     this.currentIndex = 0; // Reset to first slide when category changes
+  }
+
+  //listen for window resize event
+  @HostListener('window:resize',['$event'])
+  onResize(event: any){
+    this.updateButtonText();
+  }
+
+  ngOnInit(){
+    this.updateButtonText();//set the button text based on initial screen size
+  }
+
+  updateButtonText(){
+    const screenWidth = window.innerWidth;
+    if(screenWidth<=707){
+      this.nextBtn = '';
+      this.prevBtn = '';
+    }else{
+      this.nextBtn = 'Next';
+      this.prevBtn = 'Previous'
+    }
   }
 }
