@@ -12,11 +12,13 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
 export class ProductComponent {
   nextBtn: string = 'Next';
   prevBtn: string = 'Previous';
+  selectedImage: any = null;
+  isModalOpen: boolean = false;
 
   images = [
     { src: '/closet1.jpg', alt: 'closet', category: 'Closets' },
     { src: '/closet2.jpg', alt: 'closet', category: 'Closets' },
-    { src: '/closet3.jpg', alt: 'closet', category: 'Closets' },
+    { src: '/closet3.jpg', alt: 'Spear closet', category: 'Closets' },
     { src: '/closet4.png', alt: 'closet', category: 'Closets' },
     { src: '/closet5.webp', alt: 'closet', category: 'Closets' },
     { src: '/closet6.jpg', alt: 'closet', category: 'Closets' },
@@ -114,12 +116,22 @@ export class ProductComponent {
 
   updateButtonText(){
     const screenWidth = window.innerWidth;
-    if(screenWidth<=707){
+    if(screenWidth <= 707){
       this.nextBtn = '';
       this.prevBtn = '';
     }else{
       this.nextBtn = 'Next';
       this.prevBtn = 'Previous'
     }
+  }
+
+  openModal(image: any){
+    this.selectedImage = image;
+    this.isModalOpen = true;
+  }
+
+  closeModal(){
+      this.isModalOpen = false;
+      this.selectedImage = null;
   }
 }
