@@ -35,12 +35,20 @@
         <div class="container text-center">
         <div class="image-grid">
           <div *ngFor="let image of currentImages" class="image-item">
-            <img class="rounded aspect" [src]="image.src" [alt]="image.alt">
+            <img (click)="openModal(image)" class="rounded aspect" [src]="image.src" [alt]="image.alt">
           </div>
         </div>
         <button class="btn" (click)="prevSlide()">&#10094;&nbsp;{{prevBtn}}</button>
         <button class="btn" (click)="nextSlide()">{{nextBtn}}&nbsp;&#10095;</button>
-      </div>  
+      </div> 
+      <div class="modal" [ngClass]="{'show': isModalOpen}" (click)="closeModal()">
+          <div class="modal-content" (click)="$event.stopPropagation()">
+              <span class="close" (click)="closeModal()">&times;</span>
+              <img [src]="selectedImage?.src" [alt]="selectedImage?.alt" class="modal-image">
+          </div>
+      </div> 
     </div>
+
+
     <app-section-end></app-section-end>
 </div>
