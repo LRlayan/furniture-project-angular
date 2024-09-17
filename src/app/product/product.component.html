@@ -9,12 +9,24 @@
            <nav class="navbar navbar-expand-sm">
                <div class="container-fluid" style="width: 354px;">
                   <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">All</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Table</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Closets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Bed</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Window</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Door</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" (click)="selectCategory('All'); $event.preventDefault()">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" (click)="selectCategory('Table'); $event.preventDefault()">Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" (click)="selectCategory('Closets'); $event.preventDefault()">Closets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" (click)="selectCategory('Bed'); $event.preventDefault()">Bed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" (click)="selectCategory('Window'); $event.preventDefault()">Window</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" (click)="selectCategory('Door'); $event.preventDefault()">Door</a>
+                    </li>
                   </ul>
                 </div>
             </nav>  
